@@ -133,24 +133,23 @@ this.reports.splice(index,1)
 */
 
 class Machine{
-  widgets_made_count = 0
-  wear_and_tear_count = 0
-  needs_reboot = false
+  constructor(){
+this.widget_made_count = 0
+this.wear_and_tear_count = 0
+this.needs_reboot = false
+  }
   makeWidgets(){
-    let num = num
-    this.widgets_made_count + num
-    if(wear_and_tear_count >= 50, wear_and_tear_count + 1);
+    this.widget_made_count += number
+    this.wear_and_tear_count += Math.floor(number /50)
   }
   fixMachine(){
-    if(this.needs_reboot === false){
-      return true
-    }
+    this.needs_reboot = true
   }
   reboot(){
-    return function(){
-      wear_and_tear_count -= 10;
-      needs_reboot === false;
-    }
+   return () => {
+     this.wear_and_tear_count -=10
+     this.needs_reboot = false
+   }
   }
 }
 
